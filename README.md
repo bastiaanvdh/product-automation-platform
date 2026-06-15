@@ -8,6 +8,8 @@
 ![AI](https://img.shields.io/badge/AI-ChatGPT%20%7C%20Claude-purple.svg)
 ![Status](https://img.shields.io/badge/Status-Productie-success.svg)
 
+> ℹ️ **Over deze repository** — De productiecode van dit platform draait intern bij FOV en is om bedrijfsredenen niet publiek. Deze README is een technische beschrijving van de architectuur, aanpak en resultaten. Een uitgebreide case study lees je op mijn [portfolio](https://bastiaanvdh.github.io/portfolio/cases/product-automation-platform.html).
+
 ---
 
 ## 📊 Impact Metrics
@@ -333,6 +335,8 @@ Handmatig equivalent: 400+ uur (80x sneller)
 
 ## 🔧 Workflow Voorbeeld
 
+> De onderstaande snippets zijn illustratief en tonen de kern van de pipeline-logica.
+
 ### Input Data
 ```python
 product = {
@@ -377,46 +381,6 @@ result = {
 }
 ```
 
-### KING Export
-```excel
-| Product ID | Meta 1 | Meta 2 | Beschrijving | PDF Links |
-|------------|--------|--------|--------------|-----------|
-| 12345      | ...    | ...    | ...          | ...       |
-```
-
----
-
-## 📁 Repository Structuur
-
-```
-product-automation-platform/
-├── scrapers/
-│   ├── competitor_scraper.py
-│   ├── selenium_handler.py
-│   └── README.md
-├── pdf_processing/
-│   ├── ocr_extractor.py
-│   ├── document_matcher.py
-│   └── README.md
-├── ai_generation/
-│   ├── chatgpt_generator.py
-│   ├── claude_validator.py
-│   ├── prompt_templates.py
-│   └── README.md
-├── king_integration/
-│   ├── excel_exporter.py
-│   ├── bulk_importer.py
-│   └── README.md
-├── pipeline/
-│   ├── orchestrator.py
-│   ├── config.py
-│   └── README.md
-├── docs/
-│   └── architecture.md
-├── requirements.txt
-└── README.md
-```
-
 ---
 
 ## 🔒 Security & Compliance
@@ -431,24 +395,18 @@ product-automation-platform/
 
 ## 📝 Licentie
 
-MIT License - zie [LICENSE](LICENSE) voor details
+MIT License
 
 ---
 
 ## 👤 Auteur
 
-**Bastiaan van der Horst**
-- LinkedIn: [linkedin.com/in/bastiaanvanderhorst](https://linkedin.com/in/bastiaanvanderhorst)
-- GitHub: [github.com/bastiaanvdh](https://github.com/bastiaanvdh)
+**Bastiaan van der Horst** — [LinkedIn](https://www.linkedin.com/in/bastiaan-v-01846112a) · [Portfolio](https://bastiaanvdh.github.io/portfolio) · [GitHub](https://github.com/bastiaanvdh)
 
 ---
 
-## 🙏 Dankwoord
+## 🙏 Achtergrond
 
 Gebouwd om real-world e-commerce uitdagingen op schaal op te lossen. Dit platform demonstreert de kracht van het combineren van web scraping, AI, en enterprise integraties om production-ready automatisering te creëren die meetbare bedrijfswaarde levert.
 
 **Van concept tot 5.000 producten live in productie.**
-
----
-
-**⭐ Star deze repo als je het interessant vindt!**
